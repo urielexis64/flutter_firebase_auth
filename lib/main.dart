@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_firebase_auth/src/pages/HomePage.dart';
 import 'package:flutter_firebase_auth/src/pages/HuaweiCheckPage.dart';
 import 'package:flutter_firebase_auth/src/pages/UserProfilePage.dart';
@@ -9,8 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Firebase Auth',
-      initialRoute: ' /home',
+      initialRoute: '/huaweiCheck',
       routes: {
         '/home': (_) => HomePage(),
         '/huaweiCheck': (_) => HuaweiCheckPage(),
