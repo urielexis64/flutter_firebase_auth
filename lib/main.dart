@@ -3,7 +3,6 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'package:flutter_firebase_auth/src/pages/HomePage.dart';
 import 'package:flutter_firebase_auth/src/pages/HuaweiCheckPage.dart';
-import 'package:flutter_firebase_auth/src/pages/UserProfilePage.dart';
 import 'package:flutter_firebase_auth/src/services/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
@@ -25,7 +24,6 @@ class MyApp extends StatelessWidget {
         routes: {
           '/home': (_) => HomePage(),
           '/huaweiCheck': (_) => HuaweiCheckPage(),
-          '/userProfile': (_) => UserProfilePage(),
         },
       ),
     );

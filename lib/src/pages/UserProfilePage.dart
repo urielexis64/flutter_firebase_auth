@@ -31,20 +31,14 @@ class UserProfilePage extends StatelessWidget {
                 'Perfil de usuario',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
-              SizedBox(
-                height: 32,
-              ),
+              SizedBox(height: 32),
               CircleAvatar(
                 radius: 70,
                 backgroundImage: NetworkImage(user.photoURL),
               ),
-              SizedBox(
-                height: 8,
-              ),
+              SizedBox(height: 8),
               Text('Nombre: ${user.displayName}'),
-              SizedBox(
-                height: 8,
-              ),
+              SizedBox(height: 8),
               Text('Email: ${user.email}'),
             ],
           ),
